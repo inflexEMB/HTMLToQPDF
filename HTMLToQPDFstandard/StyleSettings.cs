@@ -11,8 +11,10 @@ namespace HTMLToQPDFstandard
         public static readonly string[] LineElements = new string[] {
             "a",
             "b",
+            "strong",
             "br",
             "i",
+            "em",
             "s",
             "small",
             "space",
@@ -60,9 +62,11 @@ namespace HTMLToQPDFstandard
                 case "h5":
                 case "h6":
                 case "b":
+                case "strong":
                 case "s":
                 case "strike":
                 case "i":
+                case "em":
                 case "small":
                 case "u":
                     return new ParagraphComponent(new List<HtmlNode>() { node }, args);

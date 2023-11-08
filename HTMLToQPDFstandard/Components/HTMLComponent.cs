@@ -25,8 +25,10 @@ namespace HTMLToQPDFstandard.Components
             { "h4", TextStyle.Default.FontSize(20).Bold() },
             { "h5", TextStyle.Default.FontSize(16).Bold() },
             { "h6", TextStyle.Default.FontSize(12).Bold() },
+            { "strong", TextStyle.Default.Bold() },
             { "b", TextStyle.Default.Bold() },
             { "i", TextStyle.Default.Italic() },
+            { "em", TextStyle.Default.Italic() },
             { "small", TextStyle.Default.Light() },
             { "strike", TextStyle.Default.Strikethrough() },
             { "s", TextStyle.Default.Strikethrough() },
@@ -36,7 +38,7 @@ namespace HTMLToQPDFstandard.Components
 
         public Dictionary<string, Func<IContainer, IContainer>> ContainerStyles { get; } = new Dictionary<string, Func<IContainer, IContainer>>()
         {
-            { "p", c => c.PaddingVertical(6) },
+            { "p", c => c.PaddingVertical(0) },
             { "ul", c => c.PaddingLeft(30) },
             { "ol", c => c.PaddingLeft(30) }
         };
