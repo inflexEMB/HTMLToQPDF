@@ -18,7 +18,7 @@ namespace HTMLToQPDFstandard.Utils
                     case Unit.Millimetre: return 2.83464575f;
                     case Unit.Feet: return 864f;
                     case Unit.Inch: return 72f;
-                    case Unit.Mill: return 0.072f;
+                    case Unit.Mil: return 0.072f;
                     default: throw new ArgumentException("unit", unit.ToString(), null);
                 }
             }

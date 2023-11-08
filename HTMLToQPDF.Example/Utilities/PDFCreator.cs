@@ -1,4 +1,5 @@
-﻿using HTMLQuestPDF.Extensions;
+﻿
+using HTMLToQPDFstandard.Extensions;
 using QuestPDF.Fluent;
 using QuestPDF.Helpers;
 using QuestPDF.Infrastructure;

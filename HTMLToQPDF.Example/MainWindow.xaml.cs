@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using QuestPDF.Infrastructure;
+using System.Windows;
 
 namespace HTMLToQPDF.Example
 {
@@ -10,6 +11,7 @@ namespace HTMLToQPDF.Example
         public MainWindow()
         {
             InitializeComponent();
+            QuestPDF.Settings.License = LicenseType.Community;
         }
     }
 }
